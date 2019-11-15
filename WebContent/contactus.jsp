@@ -101,6 +101,7 @@ footer {
 					hitsCount += 1;
 				}
 				application.setAttribute("hitCounter", hitsCount);
+				Integer totalHit = (Integer) application.getAttribute("totalHit");
 			%>
 			<form name="contactForm" method="post" action="process">
 				<div class="row">
@@ -204,7 +205,7 @@ footer {
 					class="btn btn-lg btn-primary mt40">Submit</button>
 			</form>
 			<p class="mt-5">Hit count for this page: <%=hitsCount%></p>
-			<p>Total hit count for the entiry web app: ${totalCount}</p>
+			<p>Total hit count for the entiry web app: ${totalHit}</p>
 		</section>
 	</div>
 	<footer class="bg-secondary text-white mt-4">
